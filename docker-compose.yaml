@@ -1,6 +1,6 @@
-version: '3.5'
+version: "3.5"
 services:
   ant:
     build:
       context: .
-    command: 'java -help'
+    command: ""
