@@ -1,7 +1,7 @@
 FROM frekele/ant
 
-WORKDIR /opt/ant/lib
+WORKDIR /usr/src/app
 
 # Had to upload to my own github because salesforce provides a zip file that would need to be extrated instead of just downloaded
-RUN wget https://github.com/rlancer/salesforce-docker-utils/raw/master/ant-salesforce.jar
+RUN wget -O /opt/ant/lib/ant-salesforce.jar https://github.com/rlancer/salesforce-docker-utils/raw/master/ant-salesforce.jar
 
